@@ -59,3 +59,13 @@ h6 {
 p {
   margin-bottom: 0.75rem;
 }
+
+a {
+  color: #55799B;
+  text-decoration: underline;
+}
+
+/* Hover Effect for Links */
+a:hover {
+  text-decoration: none;
+}
