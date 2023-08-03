@@ -4,7 +4,12 @@ body {
   font-size: 1.5rem;
 }
 
+.navbar {
+  background-color: #55799B;
+}
+
 .navbar-brand {
+  font-family: 'Ms Madi', cursive;
   font-size: 1.5rem;
 }
 
