@@ -13,6 +13,12 @@ body {
   font-size: 1.5rem;
 }
 
+.qr-gift {
+  width: 10rem;
+  max-width: 100%;
+  height: auto;
+}
+
 h1 {
   font-size: 2.5rem;
   margin-top: 0;
