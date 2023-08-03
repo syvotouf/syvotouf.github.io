@@ -19,6 +19,11 @@ body {
   height: auto;
 }
 
+.carousel-item img {
+  height: 300px;
+  object-fit: cover;
+}
+
 h1 {
   font-family: 'Ms Madi', cursive;
   font-size: 4rem;
