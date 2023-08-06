@@ -42,7 +42,7 @@
     <h1>Vítejte na našem svatebním webu!</h1>
     <p>Více informací naleznete na jednotlivých stránkách v navigačním menu vpravo nahoře.</p>
     <p>Pokud byste zde nenašli informaci, kterou hledáte, napište nám na e-mail: <a href="mailto:svatba@safratovi.cz">svatba@safratovi.cz</a></p>
-    <div class="alert alert-info" role="alert">Do svatby zbývá <span id="countdown"></span></div>
+    <div class="alert alert-info" role="alert" onload="do_countdown">Do svatby zbývá <span id="countdown"></span></div>
     <h2>Barevná paleta</h2>
     <p>Pro naši svatbu jsme zvolili následující barevnou paletu. Můžete se rozhodnout s ní sladit své oblečení nebo doplňky, ale není to podmínkou. Především chceme, aby si tento výjimečný den s námi každý užil naplno.</p>
     <img src="img/paleta.png" class="d-block mx-auto color-palette" alt="Barevná paleta" />
@@ -52,9 +52,7 @@
     // Set the date we're counting down to
     var countDownDate = new Date("Sep 23, 2023 11:00:00").getTime();
     
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
+    function do_countdown(){
       // Get today's date and time
       var now = new Date().getTime();
         
@@ -76,7 +74,10 @@
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "-";
       }
-    }, 1000);
+    }
+
+    // Update the count down every 1 second
+    var x = setInterval(do_countdown, 1000);
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
