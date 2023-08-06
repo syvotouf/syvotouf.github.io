@@ -42,6 +42,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
+#countdown {
+  background-color: #d9c0c4;
+  border-color: #b69cb2;
+  color: #000000;
+  margin-top: 2rem;
+}
+
 h1 {
   font-family: 'Ms Madi', cursive;
   font-size: 4rem;
