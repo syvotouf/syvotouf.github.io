@@ -63,7 +63,6 @@
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
       // Output the result in an element with id="demo"
       document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
@@ -75,10 +74,9 @@
         document.getElementById("countdown").innerHTML = "-";
       }
     }
-
-    do_countdown();
-
+    
     // Update the count down every 1 second
+    do_countdown();
     var x = setInterval(do_countdown, 1000);
   </script>
 
