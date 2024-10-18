@@ -1,86 +1,176 @@
 <!DOCTYPE html>
 <html lang="cs">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Svatba D & L</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kralupští Supi - Amatérský Hokejový Tým</title>
+    <!-- Latest Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .highlight {
+            background-color: #ffc107 !important; /* Ensure highlight color is applied */
+            color: #000; /* Optional: change text color for better contrast */
+        }
+        .container {
+            margin-top: 20px; /* Add some space at the top */
+        }
+    </style>
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Svatba D & L</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">O nás</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ceremony.html">Obřad</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="reception.html">Hostina</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gifts.html">Dary</a>
-          </li>
-        </ul>
-      </div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container my-0">
+        <a class="navbar-brand" href="#">Kralupští Supi</a>
     </div>
-  </nav>
+</nav>
 
-  <div class="container">
-    <h1>Vítejte na našem svatebním webu!</h1>
-    <p>Více informací naleznete na jednotlivých stránkách v navigačním menu vpravo nahoře.</p>
-    <p>Pokud byste zde nenašli informaci, kterou hledáte, napište nám na e-mail: <a href="mailto:svatba@safratovi.cz">svatba@safratovi.cz</a></p>
-    <div class="alert alert-info" id="countdown-alert" role="alert">Do svatby zbývá <span id="countdown"></span></div>
-    <h2>Barevná paleta</h2>
-    <p>Pro naši svatbu jsme zvolili následující barevnou paletu. Můžete se rozhodnout s ní sladit své oblečení nebo doplňky, ale není to podmínkou. Především chceme, aby si tento výjimečný den s námi každý užil naplno.</p>
-    <img src="img/paleta.png" class="d-block mx-auto color-palette" alt="Barevná paleta" />
-  </div>
+<!-- Schedule Section -->
+<section id="schedule" class="container">
+    <h2 class="mb-4">Rozpis Tréninků</h2>
+    <table class="table table-striped" id="scheduleTable">
+        <thead class="table-dark">
+            <tr>
+                <th>Datum</th>
+                <th>Čas</th>
+                <th>Místo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-date="2024-09-21T21:00">
+                <td>21. září 2024</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+            <tr data-date="2024-10-05T21:00">
+                <td>5. října 2024</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+            <tr data-date="2024-10-19T21:00">
+                <td>19. října 2024</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+            <tr data-date="2024-11-02T21:00">
+                <td>2. listopadu 2024</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+            <tr data-date="2024-11-16T21:00">
+                <td>16. listopadu 2024</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+            <tr data-date="2024-11-30T21:00">
+                <td>30. listopadu 2024</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+            <tr data-date="2024-12-14T21:00">
+                <td>14. prosince 2024</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+            <tr data-date="2025-01-11T21:00">
+                <td>11. ledna 2025</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+            <tr data-date="2025-01-25T21:00">
+                <td>25. ledna 2025</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+            <tr data-date="2025-02-08T21:00">
+                <td>8. února 2025</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+            <tr data-date="2025-02-22T21:00">
+                <td>22. února 2025</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+            <tr data-date="2025-03-08T21:00">
+                <td>8. března 2025</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+            <tr data-date="2025-03-22T21:00">
+                <td>22. března 2025</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+            <tr data-date="2025-04-05T21:00">
+                <td>5. dubna 2025</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+            <tr data-date="2025-04-19T21:00">
+                <td>19. dubna 2025</td>
+                <td>21:00</td>
+                <td>ZS Kralupy</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
-  <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Sep 23, 2023 11:00:00").getTime();
-    
-    function do_countdown(){
-      // Get today's date and time
-      var now = new Date().getTime();
-        
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-        
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        
-      // Output the result in an element with id="demo"
-      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-      + minutes + "m";
-        
-      // If the count down is over, write some text 
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").innerHTML = "-";
-      }
-    }
-    
-    // Update the count down every 1 second
-    do_countdown();
-    var x = setInterval(do_countdown, 1000);
-  </script>
+<!-- News Section -->
+<section id="news" class="container my-5">
+    <h2 class="mb-4">Novinky</h2>
+    <div class="news-section">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Nový web</h5>
+                <p class="card-text">Z důvodu ekonomičtějšího provozu jsme přešli na statický web se zjednodušeným obsahem. Starou verzi webu můžete najít v <a href="https://web.archive.org/web/20240422124610/http://hcsupi.cz/">internetovém archivu</a>.</p>
+            </div>
+        </div>
+        <button class="btn btn-secondary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#olderNews" aria-expanded="false" aria-controls="olderNews">
+            Zobrazit starší novinky
+        </button>
+        <div class="collapse" id="olderNews">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Starší Novinka</h5>
+                    <p class="card-text">...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap 5 JS, Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Highlight Closest Event Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const rows = document.querySelectorAll('#scheduleTable tbody tr');
+        const now = new Date();
+
+        let closestRow = null;
+        let closestTimeDiff = Infinity;
+
+        rows.forEach(row => {
+            const eventDate = new Date(row.getAttribute('data-date'));
+
+            if (eventDate < now) {
+              row.classList.add('table-secondary');
+            } else {
+                const timeDiff = eventDate - now;
+
+                if (timeDiff < closestTimeDiff) {
+                    closestTimeDiff = timeDiff;
+                    closestRow = row;
+                }
+            }
+        });
+
+        if (closestRow) {
+            closestRow.classList.add('table-primary');
+        }
+    });
+</script>
 </body>
-
 </html>
